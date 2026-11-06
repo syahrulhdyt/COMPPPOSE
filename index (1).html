@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>COMPPPOSE — 3D Product & Spatial Design Studio</title>
+<meta name="description" content="COMPPPOSE is a 3D design studio for product design, booth design, environmental design and installation design.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f2ee;--fg:#141414;--muted:#6b6862;--line:#d9d5cd;--accent:#ff4d1c;--card:#ebe8e1}
+@media (prefers-color-scheme:dark){:root{--bg:#121212;--fg:#f1eee8;--muted:#9a968e;--line:#2c2b29;--card:#1b1a19}}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:Inter,system-ui,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3,.logo{font-family:"Space Grotesk",system-ui,sans-serif;letter-spacing:-.02em}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{font-weight:700;font-size:20px}.logo span{color:var(--accent)}
+nav a{margin-left:24px;font-size:14px;color:var(--muted)}nav a:hover{color:var(--fg)}
+.hero{padding:110px 0 80px}
+.tag{font-size:13px;color:var(--accent);font-weight:500;letter-spacing:.12em;text-transform:uppercase}
+h1{font-size:clamp(40px,7vw,84px);line-height:1.02;margin:18px 0 24px;max-width:15ch}
+.hero p{max-width:52ch;color:var(--muted);font-size:18px}
+.btn{display:inline-block;margin-top:32px;background:var(--fg);color:var(--bg);padding:14px 26px;border-radius:999px;font-weight:500;font-size:15px}
+.btn:hover{background:var(--accent);color:#fff}
+section{padding:80px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,4vw,42px);margin-bottom:40px}
+.grid{display:grid;gap:20px}
+.services{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.svc{padding:28px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+.svc b{font-family:"Space Grotesk";color:var(--accent);font-size:14px}
+.svc h3{font-size:21px;margin:10px 0}
+.svc p{color:var(--muted);font-size:15px}
+.work{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.item{border-radius:16px;overflow:hidden;background:var(--card);border:1px solid var(--line)}
+.thumb{aspect-ratio:4/3;display:grid;place-items:center;background:linear-gradient(135deg,var(--line),var(--card));color:var(--muted);font-size:13px;position:relative}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.item div.cap{padding:18px 20px}
+.item h3{font-size:18px}.item span{font-size:13px;color:var(--muted)}
+.steps{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.step{border-top:2px solid var(--fg);padding-top:14px}
+.step b{font-family:"Space Grotesk";font-size:32px;color:var(--accent)}
+.step h3{font-size:18px;margin:6px 0}.step p{color:var(--muted);font-size:15px}
+.tools{color:var(--muted);margin-top:36px;font-size:15px}
+.contact{text-align:left}
+.contact a.mail{font-family:"Space Grotesk";font-size:clamp(24px,5vw,48px);border-bottom:2px solid var(--accent)}
+footer{padding:32px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+@media(max-width:600px){nav a{margin-left:14px}.hero{padding:70px 0 50px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="#top">COMPPPOSE<span>.</span></a>
+  <nav><a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a><a href="#contact">Contact</a></nav>
+</div></header>
+
+<main id="top">
+<div class="wrap hero">
+  <div class="tag">3D Design Studio</div>
+  <h1>We compose ideas into form.</h1>
+  <p>COMPPPOSE designs products and spaces in 3D — from concept and modeling to photorealistic renders that are ready to present, approve and build.</p>
+  <a class="btn" href="#contact">Start a project</a>
+</div>
+
+<section id="services"><div class="wrap">
+  <h2>What we do</h2>
+  <div class="grid services">
+    <div class="svc"><b>01</b><h3>3D Product Design</h3><p>Product and furniture modeling, detailing and realistic renders for concept, pitch or production.</p></div>
+    <div class="svc"><b>02</b><h3>Booth Design</h3><p>Exhibition booths and tenant stalls that are eye-catching, buildable and on-brand.</p></div>
+    <div class="svc"><b>03</b><h3>Environmental Design</h3><p>Signage, displays and wayfinding that shape how people move through and experience a space.</p></div>
+    <div class="svc"><b>04</b><h3>Installation Design</h3><p>Large-scale installations and exhibition pieces, visualized in 3D before anything is built.</p></div>
+  </div>
+</div></section>
+
+<section id="work"><div class="wrap">
+  <h2>Selected work</h2>
+  <div class="grid work">
+    <!-- Replace each placeholder: put your render in /images and uncomment the <img> line -->
+    <a class="item" href="#"><div class="thumb">Project image<!-- <img src="images/project-1.jpg" alt="Project 1"> --></div><div class="cap"><h3>Project Name 01</h3><span>3D Product Design</span></div></a>
+    <a class="item" href="#"><div class="thumb">Project image<!-- <img src="images/project-2.jpg" alt="Project 2"> --></div><div class="cap"><h3>Project Name 02</h3><span>Booth Design</span></div></a>
+    <a class="item" href="#"><div class="thumb">Project image<!-- <img src="images/project-3.jpg" alt="Project 3"> --></div><div class="cap"><h3>Project Name 03</h3><span>Environmental Design</span></div></a>
+    <a class="item" href="#"><div class="thumb">Project image<!-- <img src="images/project-4.jpg" alt="Project 4"> --></div><div class="cap"><h3>Project Name 04</h3><span>Installation Design</span></div></a>
+    <a class="item" href="#"><div class="thumb">Project image<!-- <img src="images/project-5.jpg" alt="Project 5"> --></div><div class="cap"><h3>Project Name 05</h3><span>Furniture Design</span></div></a>
+    <a class="item" href="#"><div class="thumb">Project image<!-- <img src="images/project-6.jpg" alt="Project 6"> --></div><div class="cap"><h3>Project Name 06</h3><span>Signage &amp; Display</span></div></a>
+  </div>
+</div></section>
+
+<section id="process"><div class="wrap">
+  <h2>How we work</h2>
+  <div class="grid steps">
+    <div class="step"><b>1</b><h3>Brief</h3><p>We learn your goals, references, dimensions and budget.</p></div>
+    <div class="step"><b>2</b><h3>Concept</h3><p>Sketches and rough 3D massing to lock the direction.</p></div>
+    <div class="step"><b>3</b><h3>Model</h3><p>Detailed 3D modeling with materials, lighting and revisions.</p></div>
+    <div class="step"><b>4</b><h3>Deliver</h3><p>Final renders, views and files ready for production.</p></div>
+  </div>
+  <p class="tools">Tools: Fusion 360 · SketchUp · KeyShot · Photoshop · Illustrator · Figma</p>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+  <h2>Let’s make something.</h2>
+  <a class="mail" href="mailto:hello@comppose.com">hello@comppose.com</a>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© <script>document.write(new Date().getFullYear())</script> COMPPPOSE</span><span>3D Product &amp; Spatial Design Studio</span></div></footer>
+</body>
+</html>
