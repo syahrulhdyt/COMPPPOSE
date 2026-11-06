@@ -1,0 +1,58 @@
+:root{--bg:#005ce3;--fg:#f8f8f8;--muted:rgba(248,248,248,.74);--line:rgba(248,248,248,.28);--card:rgba(248,248,248,.08);--font:"Helvetica Neue",Helvetica,Arial,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font-family:var(--font);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3,.logo{font-family:var(--font);letter-spacing:-.02em}
+header{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+header .wrap{display:flex;justify-content:space-between;align-items:center;height:64px}
+.logo{font-weight:700;font-size:20px;letter-spacing:.02em}
+nav a{margin-left:24px;font-size:14px;color:var(--muted)}nav a:hover{color:var(--fg)}
+.hero{padding:110px 0 80px}
+.tag{font-size:13px;color:var(--fg);font-weight:500;letter-spacing:.12em;text-transform:uppercase}
+h1{font-size:clamp(40px,7vw,84px);line-height:1.02;font-weight:700;margin:18px 0 24px;max-width:15ch}
+.hero p{max-width:52ch;color:var(--muted);font-size:18px}
+.btn{display:inline-block;margin-top:32px;background:var(--fg);color:var(--bg);padding:14px 26px;border-radius:999px;font-weight:500;font-size:15px;border:1px solid var(--fg)}
+.btn:hover{background:transparent;color:var(--fg)}
+section{padding:80px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(28px,4vw,42px);font-weight:700;margin-bottom:40px}
+.grid{display:grid;gap:20px}
+.services{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.svc{padding:28px;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+.svc b{font-size:14px;font-weight:500}
+.svc h3{font-size:21px;margin:10px 0}
+.svc p{color:var(--muted);font-size:15px}
+.work{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.item{border-radius:16px;overflow:hidden;background:var(--card);border:1px solid var(--line);display:block}
+.item:hover{border-color:var(--fg)}
+.thumb{aspect-ratio:4/3;display:grid;place-items:center;background:linear-gradient(135deg,rgba(248,248,248,.18),rgba(248,248,248,.04));color:var(--muted);font-size:13px;position:relative;overflow:hidden}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.item div.cap{padding:18px 20px}
+.item h3{font-size:18px}.item span{font-size:13px;color:var(--muted)}
+.steps{grid-template-columns:repeat(auto-fit,minmax(200px,1fr))}
+.step{border-top:2px solid var(--fg);padding-top:14px}
+.step b{font-size:32px;font-weight:700}
+.step h3{font-size:18px;margin:6px 0}.step p{color:var(--muted);font-size:15px}
+.tools{color:var(--muted);margin-top:36px;font-size:15px}
+.contact a.mail{font-size:clamp(24px,5vw,48px);font-weight:500;border-bottom:2px solid var(--fg)}
+footer{padding:32px 0;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+/* ---- Case study page ---- */
+.back{display:inline-block;margin-top:40px;font-size:14px;color:var(--muted)}.back:hover{color:var(--fg)}
+.case-head{padding:24px 0 56px}
+.case-head h1{max-width:20ch;font-size:clamp(36px,6vw,68px)}
+.case-head .lead{max-width:60ch;color:var(--muted);font-size:19px}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:20px;padding:28px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin-top:40px}
+.meta dt{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.meta dd{font-size:16px;font-weight:500;margin-top:4px}
+.cover{aspect-ratio:16/9;border-radius:16px;overflow:hidden}
+.cover.thumb{aspect-ratio:16/9}
+.case-sec{padding:64px 0;border-top:0}
+.case-sec h2{font-size:clamp(24px,3vw,32px);margin-bottom:20px}
+.case-sec p{max-width:62ch;color:var(--muted);font-size:17px;margin-bottom:16px}
+.shots{grid-template-columns:repeat(auto-fit,minmax(300px,1fr));margin-top:32px}
+.shots .thumb{border-radius:16px;border:1px solid var(--line)}
+.next{padding:64px 0;border-top:1px solid var(--line)}
+@media(max-width:600px){nav a{margin-left:14px}.hero{padding:70px 0 50px}}
